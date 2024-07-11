@@ -31,7 +31,7 @@ NAME = cub3d
 DEBUG=  #-fsanitize=address
 MLX_FLAGS = -lmlx -framework OpenGL -framework AppKit
 ifeq ($(shell uname), Darwin)
-	CFLAGS = $(MLX_FLAGS) -g -Wall -Werror #-Wextra ${DEBUG}
+	CFLAGS = $(MLX_FLAGS) -g -Wall -Wextra  #-Werror ${DEBUG}
 else
 	@printf "\n${PURPLE}coucou${RED}\n\n"
 endif
