@@ -58,7 +58,7 @@ fclean: clean
 re: fclean all
 
 run: re
-	@./${NAME}
+	@./${NAME} map.cub
 
 cube:
 	@printf "\n"

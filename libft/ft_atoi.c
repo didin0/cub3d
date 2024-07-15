@@ -6,7 +6,7 @@
 /*   By: mabbadi <mabbadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 19:10:31 by mabbadi           #+#    #+#             */
-/*   Updated: 2023/10/13 15:11:47 by mabbadi          ###   ########.fr       */
+/*   Updated: 2024/07/13 17:52:51 by mabbadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ int	ft_atoi(const char *str)
 		str++;
 	while (*str && ft_isdigit(*str))
 	{
+		if (!ft_isdigit(*str))
+			return (-1);
 		sum = sum * 10 + *str - '0';
 		if (sum < 0 && sign == 1)
 			return (-1);
