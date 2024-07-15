@@ -6,7 +6,7 @@
 /*   By: mabbadi <mabbadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 15:57:59 by mabbadi           #+#    #+#             */
-/*   Updated: 2024/07/13 16:35:10 by mabbadi          ###   ########.fr       */
+/*   Updated: 2024/07/15 15:24:32 by mabbadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,6 @@ typedef struct s_config
 
 // PARSING
 char *ft_textures(t_config *config, char *line);
+void ft_colors(t_config *config, char *line, char type);
+int is_valid_rgb(int color);
+void *free_array(char *str);

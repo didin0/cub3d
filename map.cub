@@ -3,7 +3,7 @@ SO ./textures/Snowwallshrubs1L.gif
 WE ./textures/Snowwallshrubs2D.gif
 EA ./textures/Snowwallshrubs2L.gif
 
-F abc,100,0
+F       255,       abc      ,    0   
 C 225,30,0
 
             1111111111111111111111111
