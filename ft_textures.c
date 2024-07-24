@@ -6,7 +6,7 @@
 /*   By: mabbadi <mabbadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 16:33:45 by mabbadi           #+#    #+#             */
-/*   Updated: 2024/07/13 16:36:05 by mabbadi          ###   ########.fr       */
+/*   Updated: 2024/07/24 15:18:14 by mabbadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 char *ft_textures(t_config *config, char *line)
 {
+    (void)config;
     char *trimed;
     trimed = ft_strtrim(line, " ");
     trimed = trimed + 2;

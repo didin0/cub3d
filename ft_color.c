@@ -6,7 +6,7 @@
 /*   By: mabbadi <mabbadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 15:12:01 by mabbadi           #+#    #+#             */
-/*   Updated: 2024/07/15 15:23:52 by mabbadi          ###   ########.fr       */
+/*   Updated: 2024/07/23 16:47:09 by mabbadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void ft_colors(t_config *config, char *line, char type)
         trimed[i] = ft_strtrim(splited[i], " ");
         rgb[i] = ft_atoi(trimed[i]);
         if (!is_valid_rgb(rgb[i]))
-            printf("\033[31;01mWRONG RGB: %i \033[00m\n", rgb[i]);
+            printf("RGB: \033[31;01m%i !WRONG! \033[00m\n", rgb[i]);
         else
         {
             if (type == 'F')

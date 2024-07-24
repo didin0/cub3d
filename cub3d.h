@@ -6,7 +6,7 @@
 /*   By: mabbadi <mabbadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 15:57:59 by mabbadi           #+#    #+#             */
-/*   Updated: 2024/07/15 15:24:32 by mabbadi          ###   ########.fr       */
+/*   Updated: 2024/07/24 15:02:18 by mabbadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@
 
 typedef struct s_map
 {
-    char **grid;
+    char *grid;
     int width;
     int height;
+    struct s_map *next;
 } t_map;
 
 typedef struct s_config
@@ -39,4 +40,4 @@ typedef struct s_config
 char *ft_textures(t_config *config, char *line);
 void ft_colors(t_config *config, char *line, char type);
 int is_valid_rgb(int color);
-void *free_array(char *str);
+void free_array(char **str);

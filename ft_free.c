@@ -6,13 +6,13 @@
 /*   By: mabbadi <mabbadi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 15:16:44 by mabbadi           #+#    #+#             */
-/*   Updated: 2024/07/15 15:18:58 by mabbadi          ###   ########.fr       */
+/*   Updated: 2024/07/23 18:47:05 by mabbadi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-void *free_array(char *str)
+void free_array(char **str)
 {
     int i = 0;
 
